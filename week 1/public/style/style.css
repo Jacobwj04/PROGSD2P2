@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+    background: linear-gradient(transparent, 80%, #00ABB3);
+}
+
+.header__h1{
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+
+.main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 4rem;
+}
+
+.footer{
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+    background: linear-gradient(#00ABB3, 20%, transparent);
+}
+
+.footer__h4{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
