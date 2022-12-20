@@ -22,22 +22,16 @@ else{
 }
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Form</title>
-</head>
-<body>
+<?php include "../../private/init.php"; ?>
+<?php include SHARED__PATH . "/header.php"; ?>
+<main class="main">
     <form action="" method="POST" class="form">
         <input type="text" class="form__input" placeholder="Name" id="name" name="name">
         <input type="email" class="form__input" placeholder="Email" id="email" name="email">
         <textarea cols="30" rows="10" class="form__textarea" placeholder="Message" id="message" name="message"></textarea>
         <input class="form__submit" type="submit" id="submit" name="submit">
     </form>
-</body>
-</html>
+    <a class="main__link" href="<?php echo url_path('/index.php') ?>">Home</a>
+</main>
+
+<?php include SHARED__PATH . "/footer.php"; ?>
